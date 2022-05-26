@@ -79,7 +79,7 @@ game_end= False
 
 while not game_end:
     
-    guess= input("Please guess the next letter: ").lower()
+    guess= input("Please guess the letter: ").lower()
     for i in range(len(selected_word)):
         
         if guess not in selected_word:
