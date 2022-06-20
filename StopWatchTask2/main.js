@@ -27,11 +27,15 @@ function stopWatch(){
 }
 
 function startStopWatch(){
-    myInterval=setInterval(stopWatch, 100);
+    document.getElementById('start').disabled=true;
+    myInterval=setInterval(stopWatch, 1000);
 }
 
 function stopStopWatch(){
     clearInterval(myInterval);
+    document.getElementById('start').disabled=false;
+
+
 }
 
 function resetFunction(){
